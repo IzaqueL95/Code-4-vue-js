@@ -1,0 +1,233 @@
+CRITICAL - 2023-02-21 00:12:08 --> Undefined variable $nome
+in APPPATH\Controllers\PostExample.php on line 19.
+ 1 APPPATH\Controllers\PostExample.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nome', 'APPPATH\\Controllers\\PostExample.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 02:30:37 --> Call to undefined method App\Controllers\PostExample::model()
+in APPPATH\Controllers\PostExample.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PostExample->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 02:34:31 --> Call to undefined method App\Controllers\PostExample::model()
+in APPPATH\Controllers\PostExample.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PostExample->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 02:36:08 --> Call to undefined method App\Controllers\PostExample::model()
+in APPPATH\Controllers\PostExample.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PostExample->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 02:36:21 --> Call to undefined method App\Controllers\PostExample::model()
+in APPPATH\Controllers\PostExample.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PostExample->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 02:41:36 --> Class "App\Models\ModelExample" not found
+in APPPATH\Controllers\PostExample.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PostExample->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 02:44:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':nome,
+                    :idade
+                 )' at line 5
+in APPPATH\Models\ModelExample.php on line 19.
+ 1 APPPATH\Models\ModelExample.php(19): mysqli->prepare('INSERT INTO dados
+                 (nome,idade)
+                 VALUES
+                 (
+                    :nome,
+                    :idade
+                 )')
+ 2 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 02:53:19 --> Call to undefined method mysqli_stmt::bindValue()
+in APPPATH\Models\ModelExample.php on line 21.
+ 1 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 02:55:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':nome,
+                    :idade
+                 )' at line 5
+in APPPATH\Models\ModelExample.php on line 19.
+ 1 APPPATH\Models\ModelExample.php(19): mysqli->prepare('INSERT INTO dados
+                 (nome,idade)
+                 VALUES
+                 (
+                    :nome,
+                    :idade
+                 )')
+ 2 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 02:55:48 --> Call to undefined method mysqli_stmt::bindValue()
+in APPPATH\Models\ModelExample.php on line 21.
+ 1 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 02:58:35 --> Call to undefined method mysqli_stmt::bindValue()
+in APPPATH\Models\ModelExample.php on line 21.
+ 1 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 02:58:55 --> Class "CodeIgniter\Database\PDO\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('PDO', 'CodeIgniter\\Database\\PDO\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\PostExample.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PostExample->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:02:34 --> Class "CodeIgniter\Database\PDO\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('PDO', 'CodeIgniter\\Database\\PDO\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\PostExample.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PostExample->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:03:52 --> Class "CodeIgniter\Database\PDO\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('PDO', 'CodeIgniter\\Database\\PDO\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\PostExample.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PostExample->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:10:06 --> Class "CodeIgniter\Database\PDO\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('PDO', 'CodeIgniter\\Database\\PDO\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\PostExample.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PostExample->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:10:35 --> Class "App\Models\PDO" not found
+in APPPATH\Models\ModelExample.php on line 11.
+ 1 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:16:35 --> Class "App\Models\PDO" not found
+in APPPATH\Models\ModelExample.php on line 11.
+ 1 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:19:24 --> SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in APPPATH\Models\ModelExample.php on line 12.
+ 1 APPPATH\Models\ModelExample.php(12): PDO->__construct('mysql:host=localhost;dbname=dados', 'vueblog', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:22:25 --> SQLSTATE[HY000] [1045] Access denied for user 'vueblog'@'localhost' (using password: NO)
+in APPPATH\Models\ModelExample.php on line 12.
+ 1 APPPATH\Models\ModelExample.php(12): PDO->__construct('mysql:host=localhost;dbname=dados', 'vueblog', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:23:08 --> SQLSTATE[HY000] [1045] Access denied for user 'root '@'localhost' (using password: NO)
+in APPPATH\Models\ModelExample.php on line 12.
+ 1 APPPATH\Models\ModelExample.php(12): PDO->__construct('mysql:host=localhost;dbname=dados', 'root ', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:23:23 --> SQLSTATE[HY000] [1049] Unknown database 'dados'
+in APPPATH\Models\ModelExample.php on line 12.
+ 1 APPPATH\Models\ModelExample.php(12): PDO->__construct('mysql:host=localhost;dbname=dados', 'root', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:24:07 --> SQLSTATE[HY000] [1049] Unknown database 'dados'
+in APPPATH\Models\ModelExample.php on line 12.
+ 1 APPPATH\Models\ModelExample.php(12): PDO->__construct('mysql:host=localhost;dbname=dados', 'root', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:24:52 --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+in APPPATH\Models\ModelExample.php on line 25.
+ 1 APPPATH\Models\ModelExample.php(25): PDOStatement->execute()
+ 2 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:25:25 --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+in APPPATH\Models\ModelExample.php on line 25.
+ 1 APPPATH\Models\ModelExample.php(25): PDOStatement->execute()
+ 2 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 03:25:53 --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+in APPPATH\Models\ModelExample.php on line 25.
+ 1 APPPATH\Models\ModelExample.php(25): PDOStatement->execute()
+ 2 APPPATH\Controllers\PostExample.php(26): App\Models\ModelExample->saveUserAndAge([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PostExample->post_data()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostExample))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
