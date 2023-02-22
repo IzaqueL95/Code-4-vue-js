@@ -32,6 +32,8 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('vue_example', 'VueController::showExample');
 $routes->get('main_example', 'PostExampleLoad::showMain');
+$routes->get('view_getdados', 'GetDados::principal');
+$routes->post('view_getdadospost', 'GetDados::getAllDados');
 $routes->get('api/get_data', 'Example::get_data');
 $routes->post('api/post_data', 'PostExample::post_data');
 
